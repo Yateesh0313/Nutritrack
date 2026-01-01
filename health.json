@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Fever",
+    "summary": "Elevated body temperature often caused by infection.",
+    "symptoms": "High temperature, chills, sweating, headache, body pain, fatigue.",
+    "recommended": "Drink warm water, soups, herbal teas. Eat soft digestible foods like khichdi, bananas, applesauce, toast.",
+    "avoid": "Caffeine, alcohol, oily foods, very cold items."
+  },
+  {
+    "name": "Dehydration",
+    "summary": "Loss of body water and electrolytes.",
+    "symptoms": "Extreme thirst, dry mouth, dizziness, dark urine.",
+    "recommended": "ORS solutions, coconut water, buttermilk, water-rich fruits.",
+    "avoid": "Alcohol, soft drinks, spicy and salty foods."
+  },
+  {
+    "name": "Diarrhea",
+    "summary": "Frequent loose stools, usually due to infection.",
+    "symptoms": "Watery stools, abdominal cramps, dehydration.",
+    "recommended": "BRAT diet (banana, rice, applesauce, toast), probiotics, ORS.",
+    "avoid": "Milk, fatty food, spicy food, caffeine."
+  },
+  {
+    "name": "Constipation",
+    "summary": "Difficulty passing stools due to low fiber intake or dehydration.",
+    "symptoms": "Hard stools, abdominal discomfort, bloating.",
+    "recommended": "High-fiber foods, warm water, prunes, leafy greens.",
+    "avoid": "Fast food, red meat, fried foods."
+  },
+  {
+    "name": "Diabetes",
+    "summary": "High blood sugar levels due to insulin dysfunction.",
+    "symptoms": "Frequent urination, fatigue, increased thirst.",
+    "recommended": "Whole grains, vegetables, dal, sprouts, low GI fruits.",
+    "avoid": "Sugar, sweets, bakery foods, sugary drinks."
+  },
+  {
+    "name": "Hypertension",
+    "summary": "High blood pressure due to stress, salt, or lifestyle habits.",
+    "symptoms": "Headache, dizziness, blurred vision (sometimes no symptoms).",
+    "recommended": "Low-sodium diet, fruits, vegetables, oats, beetroot.",
+    "avoid": "Salty snacks, pickles, fried foods, caffeine."
+  },
+  {
+    "name": "Thyroid",
+    "summary": "Hormonal imbalance affecting metabolism.",
+    "symptoms": "Fatigue, weight change, hair fall, mood changes.",
+    "recommended": "Iodine-rich foods, eggs, whole grains.",
+    "avoid": "Soy, gluten, processed sugar."
+  },
+  {
+    "name": "Cold & Cough",
+    "summary": "Viral infection causing congestion and coughing.",
+    "symptoms": "Runny nose, sore throat, cough, sneezing.",
+    "recommended": "Warm soups, turmeric milk, ginger tea, honey.",
+    "avoid": "Cold drinks, ice creams, fried foods."
+  },
+  {
+    "name": "Acidity",
+    "summary": "Excess stomach acid causing discomfort.",
+    "symptoms": "Heartburn, chest burn, bloating.",
+    "recommended": "Buttermilk, bananas, coconut water, bland foods.",
+    "avoid": "Coffee, spicy foods, fried items."
+  },
+  {
+    "name": "Anemia",
+    "summary": "Low hemoglobin levels.",
+    "symptoms": "Fatigue, pale skin, breathlessness.",
+    "recommended": "Iron-rich foods like spinach, beetroot, jaggery.",
+    "avoid": "Tea/coffee immediately after meals."
+  },
+  {
+    "name": "Migraine",
+    "summary": "Severe recurring headaches often with nausea.",
+    "symptoms": "Throbbing headache, sensitivity to light or sound.",
+    "recommended": "Hydration, magnesium-rich food, almonds, ginger tea.",
+    "avoid": "Chocolate, caffeine, aged cheese."
+  },
+  {
+    "name": "PCOS",
+    "summary": "Hormonal imbalance affecting reproductive health.",
+    "symptoms": "Irregular periods, weight gain, acne.",
+    "recommended": "High-fiber foods, lean protein, nuts, omega-3 foods.",
+    "avoid": "Sugar, dairy excess, refined carbs."
+  },
+  {
+    "name": "Obesity",
+    "summary": "Excess body fat impacting health.",
+    "symptoms": "Weight gain, low energy, breathlessness.",
+    "recommended": "High-protein foods, vegetables, fruits, whole grains.",
+    "avoid": "Fast foods, sugar, fried foods."
+  },
+  {
+    "name": "Gastritis",
+    "summary": "Inflammation of stomach lining.",
+    "symptoms": "Burning stomach pain, nausea, indigestion.",
+    "recommended": "Coconut water, curd rice, bland meals, soft fruits.",
+    "avoid": "Spicy food, alcohol, sour items."
+  },
+  {
+    "name": "Vitamin D Deficiency",
+    "summary": "Low vitamin D levels affecting bones and immunity.",
+    "symptoms": "Fatigue, bone pain, low immunity.",
+    "recommended": "Sun exposure, fortified milk, eggs, mushrooms.",
+    "avoid": "Highly processed foods."
+  }
+]

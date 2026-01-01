@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriTrack – Smart Nutrition Guide</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f7fdf9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-weight: 700;
+      font-size: 26px;
+      color: #19a463;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      list-style: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    nav .auth button {
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      background: #19a463;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+
+    nav .auth button:hover {
+      background: #12804f;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 150px 60px 80px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .hero-text span {
+      color: #19a463;
+    }
+
+    .hero-text p {
+      margin: 15px 0 25px;
+      max-width: 420px;
+    }
+
+    .hero-buttons button {
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+      background: #19a463;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .hero-buttons button:hover {
+      background: #12804f;
+    }
+
+    .hero img {
+      width: 450px;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      margin: 80px 0 30px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+    }
+
+    .section-title p {
+      color: #555;
+    }
+
+    /* How It Works */
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 60px;
+      flex-wrap: wrap;
+    }
+
+    .step-box {
+      background: #ffffff;
+      padding: 25px;
+      width: 300px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-left: 6px solid #19a463;
+    }
+
+    .step-box h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    /* Cards */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 60px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      margin-top: 40px;
+      background: #e8f7f0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">NutriTrack</div>
+    
+    <div class="auth">
+      <button>Log In</button>
+      <button style="background:#ffffff;color:#19a463;border:1px solid #19a463;">Sign Up</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your Personalized <span>NutriTrack</span> Journey Starts Here</h1>
+      <p>Get AI-powered diet plans tailored to your body, goals, and lifestyle.</p>
+
+      <div class="hero-buttons">
+        <button>Start Your Journey</button>
+        <button style="background:#ffffff;color:#19a463;border:1px solid #19a463;">Learn More</button>
+      </div>
+    </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/7067/7067463.png" alt="Healthy Life" />
+  </section>
+
+  <!-- How It Works -->
+  <div class="section-title">
+    <h2>How NutriTrack Works</h2>
+    <p>Just three simple steps</p>
+  </div>
+
+  <div class="steps">
+    <div class="step-box">
+      <h3>1. Share Your Details</h3>
+      <p>Age, height, weight, activity level & health conditions.</p>
+    </div>
+
+    <div class="step-box">
+      <h3>2. Get Your Plan</h3>
+      <p>Our AI generates a personalized nutrition plan.</p>
+    </div>
+
+    <div class="step-box">
+      <h3>3. Track & Improve</h3>
+      <p>Follow your plan and adjust regularly.</p>
+    </div>
+  </div>
+
+  <!-- Health Sections -->
+  <div class="section-title">
+    <h2>We’re Here For Your Health</h2>
+    <p>Get help with your health concerns</p>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Health Condition Guidance</h3>
+      <p>Diet suggestions for diabetes, PCOS, thyroid, BP, and more.</p>
+    </div>
+
+    <div class="card">
+      <h3>Food Information Search</h3>
+      <p>Find nutrients, minerals, calories, benefits of foods.</p>
+    </div>
+
+    <div class="card">
+      <h3>Custom Diet Plans</h3>
+      <p>Get diet plans based on age, weight, height & lifestyle.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 NutriTrack — All rights reserved.
+  </footer>
+<script>
+  // Redirect all buttons to your NutriTrack login page
+  const loginURL = "login.html";   // <-- CHANGE THIS to your actual login page file name
+
+  // Start My Journey
+  document.querySelector(".hero-buttons button").onclick = () => {
+    window.location.href = loginURL;
+  };
+
+  // Login button in navbar
+  document.querySelector("nav .auth button:nth-child(1)").onclick = () => {
+    window.location.href = loginURL;
+  };
+
+  // Signup button in navbar
+  document.querySelector("nav .auth button:nth-child(2)").onclick = () => {
+    window.location.href = loginURL;
+  };
+</script>
+
+</body>
+</html>

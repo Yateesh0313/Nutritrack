@@ -1,0 +1,16 @@
+:root{
+  --accent:#2a9d8f;
+  --muted:#6c757d;
+}
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f8fafc; }
+header.bg-gradient { background: linear-gradient(120deg,#2a9d8f, #1b7a6a); color:white; border-bottom-left-radius: 12px; border-bottom-right-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+.card-food { transition: transform .15s ease, box-shadow .15s ease; cursor: pointer; }
+.card-food:hover{ transform: translateY(-6px); box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+.card-food .small-attr { font-size: 0.85rem; color:var(--muted); }
+.clickable-image { cursor: zoom-in; }
+.badge-category { background: rgba(255,255,255,0.15); color: #fff; }
+.search-group input { min-width: 200px; }
+.favorite-star{ color: #f4c542; }
+@media (max-width: 575px) {
+  .search-group { width:100%; }
+}

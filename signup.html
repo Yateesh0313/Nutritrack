@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | NutriTrack</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f3fff8;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 420px;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #19a463;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #12804f;
+    }
+
+    a {
+      text-decoration: none;
+      color: #19a463;
+      font-weight: 500;
+    }
+
+    .center-text {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">
+    <h2>Create Your Account</h2>
+
+    <input id="email" type="email" placeholder="Enter Email">
+    <input id="password" type="password" placeholder="Create Password">
+
+    <button onclick="registerUser()">Sign Up</button>
+
+    <p class="center-text">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+</div>
+
+<script>
+function registerUser() {
+  let email = document.getElementById("email").value.trim();
+  let password = document.getElementById("password").value.trim();
+
+  if (!email || !password) {
+    alert("Please enter all fields.");
+    return;
+  }
+
+  // Save user data in localStorage
+  localStorage.setItem("savedEmail", email);
+  localStorage.setItem("savedPassword", password);
+
+  alert("Account created successfully! Please login now.");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

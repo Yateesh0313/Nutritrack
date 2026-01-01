@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NutriTrackClone — Dashboard</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="brand">
+        <div class="logo">NT</div>
+        <div>
+          <div style="font-weight:700">NutriTrack</div>
+          <div class="small">Personalized nutrition</div>
+        </div>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Dashboard</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="food-info.html">Food Info</a>
+        <a href="health-info.html">Health Info</a>
+        <a href="plans.html">Plans</a>
+      </div>
+    </nav>
+
+    <header class="hero card">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <h1>Dashboard</h1>
+          <div class="small">Welcome back, Student</div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <div class="kv"><div class="small">Credits</div><div id="creditsCount">0</div></div>
+          <button class="btn btn-accent" id="genBtn">Generate Diet Plan</button>
+        </div>
+      </div>
+
+      <div style="margin-top:18px" class="tabs">
+        <div class="tab active" data-tab="overview">Overview</div>
+        <div class="tab" data-tab="analytics">Analytics</div>
+        <div class="tab" data-tab="plans">Plans</div>
+      </div>
+
+      <div id="tabContent">
+        <!-- Overview view -->
+        <div id="overview" class="tabview">
+          <div class="stat-row">
+            <div class="card stat">
+              <div class="small">Total Plans</div>
+              <h2 id="totalPlans">0</h2>
+              <div class="small">+0 this month</div>
+            </div>
+            <div class="card stat">
+              <div class="small">Active Subscription</div>
+              <h2>free</h2>
+              <div class="small">No active subscription</div>
+            </div>
+            <div class="card stat">
+              <div class="small">Available Credits</div>
+              <h2 id="availCredits">0</h2>
+              <div class="small">Use credits to generate plans</div>
+            </div>
+            <div class="card stat">
+              <div class="small">Daily Calories</div>
+              <h2 id="dailyCal">2100</h2>
+              <div class="small">Based on your latest plan</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- analytics -->
+        <div id="analytics" class="tabview" style="display:none">
+          <div class="card">
+            <h3>Nutrition Breakdown</h3>
+            <div class="small">Macronutrient distribution in your diet</div>
+            <div style="height:220px;margin-top:12px" id="chart-placeholder">[chart]</div>
+          </div>
+          <div class="card">
+            <h3>Nutrition Stats</h3>
+            <div class="small">Key nutrition metrics from your recent plans</div>
+            <div style="padding-top:12px">
+              <div class="kv"><div>Average Daily Calories</div><div id="statCal">2100</div></div>
+              <div style="height:10px"></div>
+              <div class="kv"><div>Protein (g)</div><div id="statProtein">120</div></div>
+              <div style="height:10px"></div>
+              <div class="kv"><div>Carbs (g)</div><div id="statCarbs">220</div></div>
+              <div style="height:10px"></div>
+              <div class="kv"><div>Fats (g)</div><div id="statFats">70</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- plans -->
+        <div id="plans" class="tabview" style="display:none">
+          <div class="card">
+            <h3>Recent Diet Plans</h3>
+            <div class="small">Your recently generated nutrition plans</div>
+            <div id="recentPlans" style="margin-top:12px"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div style="margin-top:14px">
+      <a href="food-info.html" class="btn btn-outline">Search Foods</a>
+      <a href="nutrition.html" class="btn btn-outline">Generate Plan</a>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

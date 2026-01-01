@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NutriTrackClone — Health Info</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="brand"><div class="logo">NT</div><div style="font-weight:700">NutriTrack</div></div>
+      <div class="navlinks">
+        <a href="index.html">Dashboard</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="food-info.html">Food Info</a>
+        <a href="health-info.html">Health Info</a>
+        <a href="plans.html">Plans</a>
+      </div>
+    </nav>
+
+    <header class="hero card">
+      <h1>Health Information</h1>
+      <div class="small">Learn about common health conditions and dietary recommendations</div>
+      <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+        <input id="hiSearch" placeholder="Search for a condition..." style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+        <button id="hiSearchBtn" class="btn btn-outline">Search</button>
+      </div>
+    </header>
+
+    <main style="margin-top:12px">
+      <div id="healthList"></div>
+    </main>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/healthinfo.js"></script>
+</body>
+</html>

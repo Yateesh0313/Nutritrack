@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriTrack – Login</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f3fff8;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      width: 420px;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid #cfcfcf;
+      outline: none;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #19a463;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #12804f;
+    }
+
+    .center-text {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #19a463;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="login-box">
+    <h2>Log In</h2>
+    <p>Enter your credentials to access your dashboard</p>
+
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+
+    <button id="loginBtn">Log In</button>
+
+    <p class="center-text">
+      Don't have an account? <a href="signup.html">Sign Up</a>
+    </p>
+  </div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

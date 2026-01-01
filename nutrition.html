@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NutriTrackClone — Nutrition</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+<div class="container">
+
+  <nav class="navbar">
+    <div class="brand">
+      <div class="logo">NT</div>
+      <div style="font-weight:700">NutriTrack</div>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Dashboard</a>
+      <a href="nutrition.html" class="active">Nutrition</a>
+      <a href="food-info.html">Food Info</a>
+      <a href="health-info.html">Health Info</a>
+      <a href="plans.html">Plans</a>
+    </div>
+  </nav>
+
+  <header class="hero card">
+    <h1>Nutrition Plans</h1>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="generate">Generate Plan</div>
+      <div class="tab" data-tab="history">History</div>
+      <div class="tab" data-tab="current">Current Plan</div>
+    </div>
+
+    <!-- ================= GENERATE TAB ================= -->
+    <div id="gen" class="tabview">
+
+      <div class="card">
+        <h3>Generate Your Personalized Diet Plan</h3>
+        <div class="small">
+          Fill in your details to get a customized nutrition plan.<br>
+          Auto Goal (from BMI): <strong id="autoGoalLabel">-</strong>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(2, minmax(250px, 1fr));gap:20px;margin-top:20px">
+
+          <div>
+            <label class="small">Age</label>
+            <input id="age" placeholder="Enter age" class="btn-outline" style="width:100%">
+          </div>
+
+          <div>
+            <label class="small">Weight (kg)</label>
+            <input id="weight" placeholder="Enter weight" class="btn-outline" style="width:100%">
+          </div>
+
+          <div>
+            <label class="small">Height (cm)</label>
+            <input id="height" placeholder="Enter height" class="btn-outline" style="width:100%">
+          </div>
+
+          <div>
+            <label class="small">Gender</label><br>
+            <label><input type="radio" name="gender" value="male" checked> Male</label>
+            <label style="margin-left:12px"><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+
+          <div style="grid-column: span 2">
+            <label class="small">Activity Level</label>
+            <select id="activity" class="btn-outline" style="width:100%">
+              <option value="1.2">Sedentary (little exercise)</option>
+              <option value="1.375">Light (1–3 days/wk)</option>
+              <option value="1.55" selected>Moderate (3–5 days/wk)</option>
+              <option value="1.725">Active (6–7 days/wk)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+          <div class="small">Available Credits: <span id="creditsGen"></span></div>
+          <button class="btn btn-accent" id="generatePlanBtn">Generate Diet Plan</button>
+        </div>
+
+      </div>
+
+      <!-- ⭐⭐⭐ VEG / NON-VEG SELECTION BOX (SHOWS AFTER CLICKING GENERATE) ⭐⭐⭐ -->
+      <div id="dietChoiceBox" class="card" style="display:none; margin-top:20px;">
+        <h3>Select Diet Preference</h3>
+        <p class="small">Choose your preferred diet type:</p>
+
+        <button id="vegBtn" class="btn btn-accent" style="margin-right:10px;">
+          Vegetarian
+        </button>
+
+        <button id="nonvegBtn" class="btn btn-outline">
+          Non-Vegetarian
+        </button>
+      </div>
+      <!-- END DIET TYPE BOX -->
+
+    </div>
+
+    <!-- ================= HISTORY TAB ================= -->
+    <div id="history" class="tabview" style="display:none">
+      <div class="card">
+        <h3>Plan History</h3>
+        <div id="historyList"></div>
+      </div>
+    </div>
+
+    <!-- ================= CURRENT PLAN TAB ================= -->
+    <div id="current" class="tabview" style="display:none">
+      <div class="card">
+        <h3>Your Personalized Diet Plan</h3>
+        <div id="currentPlanArea"></div>
+      </div>
+    </div>
+
+  </header>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/nutrition.js"></script>
+
+</body>
+</html>

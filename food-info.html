@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NutriTrack — Food Information</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+<div class="container">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="brand">
+      <div class="logo">NT</div>
+      <div style="font-weight:700">NutriTrack</div>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Dashboard</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="food-info.html" class="active">Food Info</a>
+      <a href="health-info.html">Health Info</a>
+      <a href="plans.html">Plans</a>
+    </div>
+  </nav>
+
+  <header class="hero card">
+    <h1>Food Information</h1>
+    <div class="small">Browse nutritional facts + Scan real objects</div>
+  </header>
+
+
+  <!-- 🔍 SEARCH FOOD -->
+  <section class="card" style="margin-top:12px;">
+    <h3>Search Food</h3>
+    <input id="foodSearch" 
+           placeholder="Search fruits, vegetables, grains etc..." 
+           class="btn-outline" 
+           style="width:100%;margin-top:6px;padding:10px">
+  </section>
+
+
+  <!-- 📷 IMAGE SCANNER -->
+  <section class="card" style="margin-top:20px;">
+    <h2>Food Scanner (AI-Camera Recognition)</h2>
+    <p>Upload / capture a food image to detect automatically.</p>
+
+    <input type="file" id="scanInput" accept="image/*">
+
+    <button id="openCameraBtn" class="btn-primary">📷 Open Camera</button>
+    <button id="captureBtn" class="btn-primary" style="display:none;">📸 Capture</button>
+    <button id="scanBtn" class="btn-primary">Scan Food</button>
+
+    <!-- Live Camera Preview -->
+   <video id="cameraPreview"
+       width="300"
+       autoplay
+       playsinline
+       muted
+       style="display:none; margin-top:10px; border-radius:10px;">
+</video>
+
+
+    <div id="scanResult" style="margin-top:15px;"></div>
+  </section>
+
+
+  <!-- FOOD CARDS DISPLAY GRID -->
+  <section id="foodCards" style="margin-top:18px"></section>
+
+</div>
+
+<!-- ===== MAIN PAGE SCRIPT ===== -->
+<script src="js/foodinfo.js"></script>
+
+</body>
+</html>
